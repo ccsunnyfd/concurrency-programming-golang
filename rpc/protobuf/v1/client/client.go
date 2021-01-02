@@ -4,11 +4,11 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/ccsunnyfd/concurrency-programming/rpc/protobuf/v1/hello"
+	hello "github.com/ccsunnyfd/concurrency-programming/src/rpc/protobuf/v1/proto"
 )
 
 func main() {
-	client, err := hello.DialHelloService("tcp", "localhost:1234")
+	client, err := hello.DialHelloService("tcp", "localhost:11234")
 	if err != nil {
 		log.Fatal("dialing: ", err)
 	}

@@ -6,7 +6,7 @@ import (
 	"net/rpc"
 	"net/rpc/jsonrpc"
 
-	"github.com/ccsunnyfd/concurrency-programming/rpc/helloWorld/v3/hello"
+	"github.com/ccsunnyfd/concurrency-programming/src/rpc/helloWorld/v3/hello"
 )
 
 func main() {

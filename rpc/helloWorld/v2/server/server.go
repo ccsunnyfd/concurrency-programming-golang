@@ -5,7 +5,7 @@ import (
 	"net"
 	"net/rpc"
 
-	"github.com/ccsunnyfd/concurrency-programming/rpc/helloWorld/v2/hello"
+	"github.com/ccsunnyfd/concurrency-programming/src/rpc/helloWorld/v2/hello"
 )
 
 // HelloService is
@@ -20,7 +20,7 @@ func (p *HelloService) Hello(request string, reply *string) error {
 func main() {
 	hello.RegisterHelloService(new(HelloService))
 
-	listener, err := net.Listen("tcp", ":1234")
+	listener, err := net.Listen("tcp", ":11234")
 	if err != nil {
 		log.Fatal("ListenTCP error: ", err)
 	}

@@ -5,7 +5,7 @@ import (
 	"net"
 	"net/rpc"
 
-	"github.com/ccsunnyfd/concurrency-programming/rpc/kvStoreWatch/v1/kvstore"
+	"github.com/ccsunnyfd/concurrency-programming/src/rpc/kvStoreWatch/v1/kvstore"
 )
 
 func main() {

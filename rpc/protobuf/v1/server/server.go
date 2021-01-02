@@ -5,7 +5,7 @@ import (
 	"net"
 	"net/rpc"
 
-	"github.com/ccsunnyfd/concurrency-programming/rpc/protobuf/v1/hello"
+	hello "github.com/ccsunnyfd/concurrency-programming/src/rpc/protobuf/v1/proto"
 )
 
 // HelloService is
@@ -21,7 +21,7 @@ func main() {
 	server := rpc.NewServer()
 	hello.RegisterHelloService(server, &HelloService{})
 
-	listener, err := net.Listen("tcp", ":1234")
+	listener, err := net.Listen("tcp", ":11234")
 	if err != nil {
 		log.Fatal("ListenTCP error: ", err)
 	}

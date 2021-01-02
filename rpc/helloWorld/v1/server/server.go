@@ -5,7 +5,7 @@ import (
 	"net"
 	"net/rpc"
 
-	"github.com/ccsunnyfd/concurrency-programming/rpc/helloWorld/v1/hello"
+	"github.com/ccsunnyfd/concurrency-programming/src/rpc/helloWorld/v1/hello"
 )
 
 func main() {
